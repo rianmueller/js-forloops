@@ -100,9 +100,10 @@ var oddSum = 0;
 
 for(var i = 0; i < 100; i++){
    if(i % 2 === 1){
-      
+      oddSum = oddSum + i;
    }
 }
+console.log(oddSum);
 
 /* 7) Oops There It is
 Declare a variable named `oopsArray` and assign its to the following array: `[ 'turn' , , 'down' , , 'for' , , 'what' ]`.
@@ -147,7 +148,13 @@ Next, write a function named `nap`. This function takes in a single parameter: `
 Inside of this function write a for-loop that will iterate through the `napSchedule` array and console.log the message: `ZzZzZzZz` if the schedule is `true`, otherwise the it will console.log the message: `Gotta get coding!` if the schedule is `false`.
 */
 
+var napSchedule = [false, false, true, false, true, true];
 
+function nap(schedule){
+   for(var i = 0; i < napSchedule.length; i++){
+
+   }
+}
 
 /* 10) Copy Pasta
 Declare a variable named `valuesArray` and assign its value to be an array: `[99, 66, 829, 1941, 8, 76]`. 
@@ -189,6 +196,13 @@ Write a function that will capitalize the first letter in each word in the phras
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
+// need to split the string into an array of strings, one for every word, then capitalize
+
+function firstCap(str){
+   var strArr = str.split(' ');
+   console.log(strArr); //this is an array of strings
+}
+firstCap(myWay);
 
 
 /* 14) Sightseeing
