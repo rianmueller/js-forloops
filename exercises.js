@@ -149,16 +149,16 @@ Inside of this function write a for-loop that will iterate through the `napSched
 
 var napSchedule = [false, false, true, false, true, true];
 
-function nap(){
-   for(var i = 0; i < napSchedule.length; i++){
-      if(napSchedule[i] == true){
+function nap(schedule){
+   for(var i = 0; i < schedule.length; i++){
+      if(schedule[i] == true){
          console.log('ZzZzZzZz');
       }else{
          console.log('Gotta get coding!');
       }
    }
 }
-nap();
+nap(napSchedule);
 
 /* 10) Copy Pasta
 Declare a variable named `valuesArray` and assign its value to be an array: `[99, 66, 829, 1941, 8, 76]`. 
