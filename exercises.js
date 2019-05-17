@@ -112,15 +112,14 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
 
-var oopsArray = ['turn' , , 'down' , , 'for' , , 'what'];
+var oopsArray = ['turn', , 'down', , 'for', , 'what']
 
 for(var i = 0; i < oopsArray.length; i++){
-   if(i % 2 === 1){
-      oopsArray[i] = 'nope';
+   if(i % 2 == 1){
+      oopsArray[i] = 'nope'
    }
 }
 console.log(oopsArray);
-
 
 /* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
@@ -150,11 +149,16 @@ Inside of this function write a for-loop that will iterate through the `napSched
 
 var napSchedule = [false, false, true, false, true, true];
 
-function nap(schedule){
+function nap(){
    for(var i = 0; i < napSchedule.length; i++){
-
+      if(napSchedule[i] == true){
+         console.log('ZzZzZzZz');
+      }else{
+         console.log('Gotta get coding!');
+      }
    }
 }
+nap();
 
 /* 10) Copy Pasta
 Declare a variable named `valuesArray` and assign its value to be an array: `[99, 66, 829, 1941, 8, 76]`. 
